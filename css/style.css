@@ -1,0 +1,729 @@
+
+/* ЗАГОТОВКИ ДЛЯ МЕДИА-ЗАПРОСОВ*/
+
+/*font-family: 'Open Sans', sans-serif;*/
+/* ОБЩИЕ правила*/
+
+body{
+    background-color: #ececec;
+    font-size: 14px;
+    color: #000;
+    min-width: 320px; /* минимальный размер экрана */
+}
+/* карттинки резиновый */
+/*img{
+    min-width: 100%;
+    height: auto;
+}
+/* заголовок для статей */
+h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+.btn-red{
+    background-color: #d51e08;
+    color: #fff;
+}
+
+.btn-red:hover{
+    background-color: #ec4835;
+
+}
+
+/* -------------------------------------- Header --------------------------------------------*/
+.navbar {
+    margin: 0px;
+    background-color: #fff;
+    padding: 20px 0;
+    text-transform: uppercase; /* текст в  верхний регистр*/
+
+}
+.navbar-default .navbar-nav > li > a{
+    color: #000 ;
+    padding-left: 5px;
+    transition: background .3s;
+}
+.navbar-default .navbar-nav > li > a:hover{
+    text-decoration: underline;
+    transition: background .3s;
+}
+.navbar-default .navbar-nav > li > a.btn-red{
+     color: #fff ;
+     border-radius: 3px;
+     padding: 15px 25px;
+ }
+.navbar-default .navbar-nav > li > a.btn-red:hover{
+    color: #fff ;
+    background-color: #ec4835;
+    text-decoration: none;
+}
+.navbar-default .navbar-nav > li > a > .glyphicon{
+    font-size: 17px;
+    margin-right: 5px;
+}
+
+.navbar-default .navbar-nav > li > a> span> .flag{
+    margin-right: 5px;
+    position:relative;
+    top:-1px;
+}
+.menu-top .container,
+.menu-top .collapse{
+    padding-left: 0px;
+}
+/*----------------- Карусель --------------------------------*/
+.carousel-caption{
+
+    top: 160px;
+    left: -150px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+}
+
+.carousel-caption h1 {
+font-size: 40px;
+    font-weight: bold;
+}
+.carousel-caption p {
+    font-size: 20px;
+    margin: 25px;
+}
+
+.carousel-caption .btn-red{
+    padding: 10px;
+    transition: background .5s;
+    border-radius: 5px;
+}
+.carousel-caption .btn-red:hover{
+    background-color: #ec4835;
+    color: #fff;
+    text-decoration: none;
+    transition: background .5s;
+}
+
+/* ------------------*/
+.carousel.fade{
+    opacity: 1;
+
+}
+/* прокрутка*/
+.carousel-indicators.car {
+   margin-left: -5%;
+    bottom: -20px;
+    border: 1px solid #cfcfcf;
+    background-color: #fff;
+    border-radius: 3px;
+    width: 10%;
+
+}
+.carousel-indicators.car  li{
+   margin: 0 7px;
+   background-color: #cfcfcf;
+    height: 9px;
+    width: 9px;
+}
+
+.carousel-indicators.car  li.active{
+ background-color: #a3a3a3;
+    margin: 0 7px ;
+    height: 9px;
+    width: 9px;
+}
+/*чтобы анимировать свойство opacity*/
+.carousel.fade .item{
+z-index: 1;
+    opacity: 0;
+    transition: opacity .5s;
+   display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+}
+
+.carousel.fade .item.active{
+  z-index: 2;
+    opacity: 1;
+    position: relative;
+}
+.carousel-control{
+    z-index: 3;
+}
+/* ----------------------------------- Навигация 2 -----------------------------------*/
+.nav2{
+    background-color: #000;
+    font-size: 16px;
+    text-transform: none;
+
+}
+
+.navbar-inverse .navbar-nav > li > a{
+    color: #fff;
+}
+.brand {
+    float: left;
+    z-index: 40;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    padding: 9px 0 0 10px;
+}
+.main-menu{position: relative;}
+.nav2{
+    position: absolute;
+    z-index: 30;
+    top: 20px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.main-menu .navbar{
+   padding: 0 0 0 0;
+}
+
+.main-menu #bs-example-navbar-collapse-2{
+    padding: 0;
+}
+
+.main-menu .navbar-brand{
+    padding: 0;
+
+}
+.main-menu .navbar-brand img {margin-left: 15px;
+}
+
+.main-menu .navbar-right{
+    margin-top: 3px;
+}
+
+/*слоган*/
+.slogan{
+    background-color: #fff;
+    font-size: 200%;
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px solid #dadada;
+    border-bottom: 3px solid #dadada;
+}
+/*слоган- end */
+/*col*/
+.col{
+    border: 1px solid #000000;
+}
+/*col- end */
+/*левый сайтбар */
+.left-bar{
+    border-right: 3px solid #dadada;
+    padding: 0;
+}
+.menu-categoris{
+    border-bottom: 3px solid #dadada;
+    list-style: none;
+    font-size: 16px;
+
+
+}
+.menu-categoris h3{
+    padding-top: 30px;
+
+}
+.menu-categoris ul {
+   padding: 10px 0 20px 0 ;
+
+}
+.menu-categoris li {
+    list-style: none;
+    padding-top: 7px;
+
+}
+.menu-categoris li a{
+    color: #000;
+
+}
+.menu-categoris li.mode > a{
+    color: #358acd;
+}
+
+
+ .left-bar .row{
+    margin-right: 0;
+}
+ /*-----------------Банеры ----------------------------*/
+ .text_and_cartinca{
+     width: 225px;
+     background-color: #fff;
+     position: relative;
+     text-align: center;
+     padding-bottom: 30px;
+     margin-bottom: 30px;
+
+ }
+.text_and_cartinca h4{
+    font-weight:bold ;
+}
+.text_and_cartinca p{
+    color: #5b5b5b;
+    font-size: 12px;
+}
+.carousel-indicators .active{
+    background-color: #5b5b5b;
+}
+ .slider-two{
+     background-color: #fff;
+     position: absolute;
+     padding: 10px;
+     bottom: -50px;
+     width: 100%;
+     border-top: 1px solid #dadada;
+ }
+ .slider-two li{
+     background-color: #cfcfcf;
+     padding-top: 10px;
+ }
+ .carousel-indicators.slider-two{
+     left: 0;
+     margin-left: 0;
+ }
+.slider-two li{
+height: 12px;
+    width: 12px;
+    margin: 0;
+    padding: 0;
+
+ }
+.banner-two{
+    text-transform: uppercase;
+}
+.text-banner{
+    margin: 40px 0 ;
+      font-size: 18px;
+
+  }
+.text-banner h4{
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.text-banner .btn-red {
+    padding: 15px 20px;
+   border-radius: 3px;
+
+}
+.text-banner > p{
+    font-size: 18px;
+    margin: 40px;
+}
+
+.text-banner .btn-red:hover {
+    color:#fff;
+    text-decoration: none;
+}
+
+.text-next-baner{
+    color:#585858;
+    padding-bottom: 30px;
+}
+.text-next-baner h3{
+    color:#000;
+
+}
+.text-next-baner span{
+    color:#2b9bb6;
+}
+.baner{
+    padding-top: 30px;
+}
+
+/*------------контент--------------------*/
+.content h3{
+    margin: 20px 0 10px 15px;
+    padding: 30px 0 10px 0;
+}
+
+/*продукты */
+.goods{
+    background-color: #fff;
+    text-align: center;
+    height: 452px;
+    overflow: hidden;
+    padding: 25px 15px;
+    position: relative;
+    transition: all .3s;
+    border: 1px solid #dadada;
+    margin-bottom: 30px;
+
+}
+.goods:hover{
+    box-shadow: 0 0 16px rgba(0,0,0, .5);
+}
+
+.goods .icons{
+    color: #909090;
+    position: absolute;
+    font-size: 20px;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
+}
+.image{
+    height: 200px;
+    cursor: pointer;
+    width: 100%;
+}
+.title-goods{
+    height: 30px;
+}
+.title-goods a{
+    cursor: pointer;
+    color: #000000 ;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.title-desc{
+    height: 60px;
+    overflow: hidden;
+}
+.get{
+    position: absolute;
+    bottom: 28px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+.get p{
+    color: #d93a28;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.get .btn {
+    color:#000000;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    border-radius: 2px;
+}
+
+.img-circle{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+
+    border: 1px solid #909090;
+    height: 52px;
+    width: 52px ;
+}
+.text-sale{
+    margin-top: 15px;
+}
+
+/*-----------------------банеры в блоке контент------------------------------*/
+.image-baner > a{
+    text-align: center;
+}
+.image-baner > a > img{
+
+    width: 100%;
+ margin-bottom: 30px;
+}
+
+/*-----------------------------------Футер--------------------------------------*/
+/*--------------Форма емейла------------*/
+.form-email{
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #9e9e9e;
+
+}
+.form-email .form-control{
+    height: 50px;
+
+    width: 100%;
+}
+.form-email .form-inline{
+    margin-top: 40px;
+}
+.form-email-text{
+    padding: 20px;
+
+}
+
+.btn-subcribe{
+background-color: #e77553;
+    border-bottom: 4px solid #d96340;
+    height: 50px;
+    width: 100%;
+
+}
+
+.btn-subcribe:hover{
+    background-color: #d96340;
+    color: #fff;
+}
+.btn-subcribe a{
+    color: #fff;
+}
+.btn-subcribe h4{
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+.form-email-text h4{
+    color: #626262;
+}
+
+/*-------------------СЛАЙДЕР elastislide ---------------------------*/
+.ela-slider{
+    background-color: #fff;
+    padding: 20px 0;
+
+}
+.elastislide-wrapper.elastislide-horizontal{
+    box-shadow: none;
+}
+
+/* ---------------------------- ФУТЕР ----------------------------*/
+
+.footer-menu{
+    background-color: #343434;
+    color:#c8c8c8;
+    padding: 30px;
+}
+.footer-menu h5{
+    font-weight: bold;
+    font-size: 18px;
+}
+.footer-menu ul {
+    padding-left: 0;
+}
+.footer-menu li {
+list-style: none;
+    color:#c8c8c8;
+}
+.footer-menu li a{
+    color:#c8c8c8;
+}
+
+.footer-menu img{
+    padding: 0 3px 3px 0;
+}
+.footer-pay{
+    background-color: #fff;
+    padding: 30px;
+
+}
+.footer-pay img{
+padding:  10px 10px 10px 0;
+}
+
+/*-----------------МЕДИА ЗАПРОСЫ--------------------*/
+@media only screen and (max-width : 1310px) { /*----Для формы поиска*/
+    .input-group{
+        margin-left: 110px;
+
+    }
+    .input-group-btn{
+
+        max-height: 100%;
+    }
+}
+
+@media only screen and (max-width : 1024px) { /*----Для карусели-----*/
+    /*Настройка карусели*/
+    .carousel-caption{
+        top: 90px;
+        left: -150px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 25px;
+    }
+    .carousel-caption p {
+        font-size: 13px;
+    }
+
+    .carousel-caption .btn-red{
+        font-size: 10px;
+    }
+    /*Настройка карусели -end */
+
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .navbar-nav {
+        float: none !important;
+    }
+    .footer-menu img{
+        display: block;
+    }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    /*левый сайт бар*/
+
+    .left-bar{
+        border-right: none;
+    }
+    /* прокрутка*/
+    .carousel-indicators.car {
+        margin-left: -10%;
+        width: 20%;
+        line-height: 1;
+        text-align: center;
+
+    }
+    .carousel-indicators.car  li{
+
+        height: 7px;
+        width: 7px;
+    }
+
+    .carousel-indicators.car  li.active{
+        height: 7px;
+        width: 7px;
+
+    }
+    /* прокрутка -end*/
+    /*text футер слева от формы*/
+    .form-email-text{
+        padding-bottom: 0;
+    }
+    .footer-menu img {
+        display: inline;
+
+    }
+}
+
+@media only screen and (max-width : 840px){
+
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+    .navbar-default .navbar-nav > li > a:hover {
+        background: #ececec;
+        text-decoration: none;
+    }
+
+    .menu-top .container, .menu-top .collapse {
+        padding-left: 15px;
+    }
+
+
+.navbar-default .navbar-nav > li > a:hover {
+    background: #ececec;
+    text-decoration: none;
+}
+
+     .main-menu .nav-ul {
+    padding-left: 20px;
+}
+    .main-menu .input-group{
+        padding-left: 35px;
+    }
+
+
+    /* ярлык */
+    .main-menu .navbar-toggle + .navbar-brand img{
+        position: relative;
+        z-index: 50;
+        max-height: 100%;
+    }
+    .main-menu .navbar-toggle.collapsed + .navbar-brand img{
+        max-height: none;
+    }
+
+    .navbar-inverse .navbar-nav > li > a:hover {
+        background: #ececec;
+        text-decoration: none;
+        color: #000;
+    }
+    /* ярлык- end  */
+    /* текст слогана */
+    .slogan {
+        background-color: #fff;
+        font-size: 17px;
+    }
+    /*левый сайт бар*/
+    .left-bar{
+
+        padding: 50px;
+    }
+    .input-group{
+        margin-left: 32px;
+
+    }
+    .main-menu  .input-group{
+        margin-right: 25px;
+        padding-left: 0;
+
+    }
+}
+
+@media only screen and (max-width : 715px) {/*для банеров*/
+    .col-xs-6{
+        width: 100%;
+    }
+    .footer-menu .col-xs-3{
+        width: 100%;
+
+        border-bottom:1px dotted #a5a5a5;
+    }
+
+}
+@media only screen and (max-width : 693px){
+
+}
+
+@media only screen and (max-width : 540px){
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+    .carousel-caption{
+        top: 10px;
+        left: -30px;
+    }
+/*Настройка карусели*/
+    .carousel-caption h1 {
+        font-size: 12px;
+    }
+    .carousel-caption p {
+        font-size: 10px;
+        margin: 10px;
+    }
+
+    .carousel-caption .btn-red{
+        font-size: 10px;
+        padding: 5px;
+    }
+    /*Настройка карусели -end */
+    /* прокрутка*/
+    .carousel-indicators.car {
+        margin-left: -10%;
+        width: 25%;
+
+    }
+    .carousel-indicators.car  li{
+
+        height: 5px;
+        width: 5px;
+    }
+
+    .carousel-indicators.car  li.active{
+        height: 5px;
+        width: 5px;
+    }
+
+}
+
+/* КАРУСЕЛЬ */
+
+.carousel-oll{
+    background-color: #877352;
+    padding: 0px;
+}
